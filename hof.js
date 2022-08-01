@@ -1,0 +1,61 @@
+  const countriesList = [
+    { country: 'Afghanistan', population: 27657145 },
+    { country: 'Åland Islands', population: 28875 },
+    { country: 'Albania', population: 2886026 },
+    { country: 'Algeria', population: 40400000 },
+    { country: 'American Samoa', population: 57100 },
+    { country: 'Andorra', population: 78014 },
+    { country: 'Angola', population: 25868000 },
+    { country: 'Anguilla', population: 13452 },
+    { country: 'Antarctica', population: 1000 },
+    { country: 'Antigua and Barbuda', population: 86295 },
+    { country: 'Argentina', population: 43590400 },
+    { country: 'Armenia', population: 2994400 },
+    { country: 'Aruba', population: 107394 },
+    { country: 'Australia', population: 24117360 },
+    { country: 'Austria', population: 8725931 },
+    { country: 'Azerbaijan', population: 9730500 },
+    { country: 'Bahamas', population: 378040 },
+    { country: 'Bahrain', population: 1404900 },
+    { country: 'Bangladesh', population: 161006790 },
+    { country: 'Barbados', population: 285000 },
+    { country: 'Belarus', population: 9498700 },
+    { country: 'Belgium', population: 11319511 },
+    { country: 'Belize', population: 370300 },
+    { country: 'Benin', population: 10653654 },
+    { country: 'Bermuda', population: 61954 },
+    { country: 'Bhutan', population: 775620 },
+    { country: 'Bolivia (Plurinational State of)', population: 10985059 },
+    { country: 'Bonaire, Sint Eustatius and Saba', population: 17408 },
+    { country: 'Bosnia and Herzegovina', population: 3531159 },
+    { country: 'Botswana', population: 2141206 },
+    { country: 'Bouvet Island', population: 0 },
+    { country: 'Brazil', population: 206135893 },
+    { country: 'British Indian Ocean Territory', population: 3000 },
+    { country: 'United States Minor Outlying Islands', population: 300 },
+    { country: 'Virgin Islands (British)', population: 28514 },
+    { country: 'Virgin Islands (U.S.)', population: 114743 },
+    { country: 'Brunei Darussalam', population: 411900 },
+    { country: 'Bulgaria', population: 7153784 },
+    { country: 'Burkina Faso', population: 19034397 },
+    { country: 'Burundi', population: 10114505 },
+    { country: 'Cambodia', population: 15626444 },
+    { country: 'Cameroon', population: 22709892 },
+    { country: 'Canada', population: 36155487 },
+    { country: 'Cabo Verde', population: 531239 },
+    { country: 'Cayman Islands', population: 58238 },
+    { country: 'Central African Republic', population: 4998000 },
+    { country: 'Chad', population: 14497000 },
+    { country: 'Chile', population: 18191900 },
+    { country: 'China', population: 1377422166 },
+    { country: 'Christmas Island', population: 2072 },
+    { country: 'India', population: 1295210000 }
+  ]
+
+  
+  let numberOfC = 2;
+  const sortTheCountries = (countriesList, numberOfCountries) => {
+    let sortedCountries = countriesList.sort((a, b) => b.population - a.population)
+    return sortedCountries.slice(0, numberOfCountries)
+  }
+console.log(sortTheCountries(countriesList, numberOfC));
